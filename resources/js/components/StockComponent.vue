@@ -7,6 +7,7 @@
             <table class="table table-responsive-xl">
                 <thead>
                     <th>#</th>
+                    <th>Image</th>
                     <th>Product Name</th>
                     <th>Qty</th>
                     <th>Price</th>
