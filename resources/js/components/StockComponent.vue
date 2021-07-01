@@ -14,8 +14,12 @@
                     <th></th>
                 </thead>
                 <tbody>
-                    <tr v-for="product in products">
+                    <tr v-for="product in products" :key="product.id">
                         <td>{{product.id}}</td>
+                        <td>
+                            <img :src="'http://localhost:8000/storage/uploads/'+product.image"
+                                        class="card-img-top" :alt="product.name" :width="200" :height="200" />
+                        </td>
                         <td>{{product.name}}</td>
                         <td>{{product.qty}}</td>
                         <td>{{product.price}}</td>
